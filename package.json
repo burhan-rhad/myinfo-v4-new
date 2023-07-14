@@ -1,29 +1,31 @@
 {
-  "name": "myinfo-connector-nodejs",
-  "version": "0.0.12",
-  "description": "MyInfo Library for NodeJs",
-  "main": "index.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/singpass/myinfo-connector-nodejs"
-  },
+  "name": "myinfo-demo-app",
+  "version": "3.0.0",
+  "description": "This is MyInfo Demo App",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sonar": "node sonar-projects.js"
+    "start": "npm run test",
+    "test": "nodemon app.js test"
   },
   "author": "MyInfo Team",
   "license": "ISC",
   "dependencies": {
+    "ajv": "^8.6.3",
+    "axios": "^1.2.1",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "lodash": "^4.17.21",
     "log4js": "^6.3.0",
+    "myinfo-connector-v4-nodejs": "1.0.2",
     "node-jose": "^2.2.0",
+    "nodemon": "^2.0.22",
     "npmrc": "^1.1.1",
-    "pem": "^1.14.4"
-  },
-  "devDependencies": {
-    "sonarqube-scanner": "^2.8.0"
+    "path": "^0.12.7",
+    "pem": "^1.14.4",
+    "pug": "^3.0.2",
+    "secure-random-string": "^1.1.3"
   }
 }
